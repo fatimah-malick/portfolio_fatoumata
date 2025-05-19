@@ -1,0 +1,152 @@
+/* Couleurs */
+:root {
+  --fond: #fffaf0;
+  --primaire: #8ecae6;
+  --accent: #ffb5a7;
+  --texte: #333;
+  --blanc: #ffffff;
+}
+
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--fond);
+  color: var(--texte);
+  line-height: 1.6;
+}
+h1{
+    color: white;
+}
+h2, h3 {
+  margin-bottom: 0.5em;
+  color: var(--primaire);
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header */
+header .hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: var(--primaire);
+  color: white;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Cartes de projets */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background-color: var(--blanc);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #f0f8ff;
+}
+
+/* Compétences */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badges span {
+  background: var(--accent);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+}
+
+/* Formulaire */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  resize: vertical;
+}
+
+button {
+  background: var(--primaire);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #219ebc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background: #e0f7fa;
+  color: var(--texte);
+}
+
+footer .socials a {
+  color: var(--texte);
+  margin: 0 10px;
+  text-decoration: none;
+}
